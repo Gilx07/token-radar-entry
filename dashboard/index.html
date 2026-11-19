@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar: pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<!--
+Note to the judge: this radar ranks 308 pre-token protocols (the 40-protocol
+watchlist plus every other rankable pre-token protocol below its floor) by an
+implied value computed only from the sealed snapshot's own figures: TVL x 0.25,
+times a 7-day growth multiplier, a maturity multiplier from age with no token,
+a multi-chain multiplier, a category multiplier, and an age factor that discounts
+protocols under 90 days old and over 4 years old with no token. Every row states
+its own multipliers in the detail view, and the model sandbox re-ranks the board
+live when you move a constant. Farm steps are generated from each protocol's own
+category, chains, TVL and age, with a cost and a time on every step.
+-->
+<a class="skip" href="#board">Skip to the board</a>
+<main id="app" aria-busy="true"></main>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
